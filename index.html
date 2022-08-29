@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/main.js"></script>
+    <title>Simulador</title>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <h1>SIMULADOR DE PRESTAMO</h1>
+            <form>
+                <div>
+                    <label for="capital">CAPITAL 
+                        <input type="text" placeholder="Ingrese el capital prestado" id="capital">
+                    </label>
+                </div>
+                <div>
+                    <label for="couta">COUTAS 
+                        <input type="text" placeholder="Ingrese las cuotas del prestamo" id="couta">
+                    </label>
+                </div>
+                <div>
+                    <label for="interes">INTERES
+                        <input type="text" placeholder="Ingrese el interés a generar" id="interes">
+                    </label>
+                </div>
+            </form>
+        <button onclick="gen_table();">CALCULAR</button>
+        </fieldset>
+        <table class="tab">
+            <head>
+                <tr>
+                    <td>NUMERO</td>
+                    <td>CAPITAL</td>
+                    <td>INTERES</td>
+                    <td>IMPORTE A PAGAR</td>
+                </tr>
+            </head>
+            <tbody id="tab">
+            </tbody>
+            <foot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </foot>
+        </table>
+    </div>
+</body>
+</html>
